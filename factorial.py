@@ -1,5 +1,7 @@
-a=int(input("enter the number"))
-factorial=1
-for  i in range ( 1, a + 1 ) :
- factorial *= i
-print("factorial is", factorial,"\n")
+def factorial(n):
+    if n == 0 or n == 1 :
+        return 1
+    else:
+         return n * factorial(n-1)
+num=int(input("enter the number"))
+print(f"Factorial {num} {factorial(num)}")
